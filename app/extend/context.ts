@@ -9,7 +9,6 @@ module.exports = {
         const { url, data, success, fail } = options;
         //从app对象中解构出工具函数集合utils和配置集合config
         const { utils, config } = this.app;
-
         // 使用node-fetch请求数据
         return nodeFetch(config.BASE_URL + url + utils.formatParams(data, config.APP_KEY))
             .then(res => res.json())

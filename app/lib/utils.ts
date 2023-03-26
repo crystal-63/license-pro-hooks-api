@@ -12,7 +12,7 @@ function typeOf (value: any): any {
 }
 
 function formatParams (data: any, appkey: string): string {
-    if(typeOf(data) !== 'Object') {
+    if(typeOf(data) !== 'object') {
         throw new Error('Param "data" must be a value of type Object')
     }
 
